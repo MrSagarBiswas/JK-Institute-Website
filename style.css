@@ -1,3 +1,145 @@
 body {
-    
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(rgba(150, 150, 150, 0.15), rgba(0, 0, 0, 0.2)),
+    url(background-image.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar1 {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+#nav1 {
+  color: white;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#nav1{
+  display: flex;
+  justify-content: space-between;
+  margin: auto 12%;
+}
+
+#nav1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+#nav1 ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.875rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#nav1 ul li {
+  margin-left: 30px;
+  font-size: 0.875rem;
+}
+
+#nav1 ul li .fa {
+  padding-right: 8px;
+}
+
+.contact-divider {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-divider {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  border-bottom: 0px;
+}
+
+#nav2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 12%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: none;
+
+  }
+
+.logo img {
+    width: 134px;
+    height: 134px;
+    margin-right: 8px;
+}
+
+.logo {
+    align-items: center;
+}
+
+.logo span {
+    position: relative;
+    bottom: 10px;
+}
+
+.logo h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.logo h1{
+    margin: 0;
+    font-size: 2.188rem;
+}
+
+#nav2 .logo {
+    display: flex;
+}
+
+#nav2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+#nav2 ul li a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 20px;
+    color: white;
+    font-size: 0.875rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#nav2 ul li .fa {
+    padding: 3px;
+    font-size: 0.6rem;
+    position: relative;
+    bottom: 1px;
+}
+
+#nav2 ul li .fa-home{
+    padding: 3px;
+    font-size: 0.85rem;
+    position: relative;
+    bottom: 0;
+}
+
+#nav2 ul li .fa-search{
+    padding: 3px;
+    font-size: 0.85rem;
+    position: relative;
+    bottom: 0;
+}
+
+#search {
+    margin-right: 0 !important;
 }
