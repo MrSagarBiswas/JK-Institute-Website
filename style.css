@@ -10,7 +10,6 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 775px;
 }
 
 .navbar1 {
@@ -20,10 +19,7 @@ header {
 #nav1 {
   color: white;
   font-weight: 400;
-  text-shadow: 2px 2px 3px #15ff00a9;
-}
-
-#nav1 {
+  text-shadow: 2px 2px 4px #2bf319a9;
   display: flex;
   justify-content: space-between;
   margin: auto 12%;
@@ -148,6 +144,7 @@ header {
   position: relative;
   margin:  auto 12%;
   color: #ffffff;
+  height: 23.125rem;
   text-shadow: 1px 1px 2px rgba(4, 0, 255, 0.767);
 }
 
