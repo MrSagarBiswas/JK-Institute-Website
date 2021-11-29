@@ -42,6 +42,7 @@ header {
   color: white;
   font-size: 0.875rem;
   text-shadow: 2px 2px 3px #ec0e0e;
+  padding: 4px;
 }
 
 #nav1 ul li {
@@ -116,7 +117,7 @@ header {
 #nav2 ul li a {
   text-decoration: none;
   padding: 5px;
-  margin: 20px;
+  margin: 5px;
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
@@ -139,13 +140,17 @@ header {
 
 #nav2 ul li .fa-search {
   padding: 3px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   position: relative;
   bottom: 0;
 }
 
 #search {
   margin-right: 0 !important;
+}
+
+.toggle {
+  display: none;
 }
 
 .ethics_excellence {
@@ -193,4 +198,122 @@ header {
   width: 45%;
   background-color: #00000041;
   border-radius: 10px;
+}
+
+/* OnClick */
+.clicked {
+  background-color: #1b4ffda9;
+  border-radius: 5%;
+}
+a:hover{
+  text-shadow: 2px 2px 4px blue !important;
+}
+
+@media (max-width: 1150px) {
+  #nav1 {
+    margin: auto 6%;
+  }
+  #nav2 {
+    margin: 45px 6%;
+  }
+
+  .ethics_excellence {
+    margin: auto 6%;
+  }
+  .ethics_excellence p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 980px) {
+  /* Margins */
+  #nav1 {
+    margin: 0 3%;
+  }
+  #nav2 {
+    margin: 20px 3%;
+  }
+
+  .ethics_excellence {
+    margin: auto 3%;
+  }
+  .ethics_excellence p {
+    width: auto;
+  }
+
+  #nav1 ul {
+    flex-direction: column;
+  }
+  #nav1 ul li {
+    margin-left: 0px;
+    padding: 2px;
+  }
+  #nav1 ul li .fa {
+    padding-right: 4px;
+  }
+
+  .logo img{
+    width: 100px;
+    height: 100px;
+  }
+  .logo h3 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  
+  .toggle {
+    display: block;
+    align-items: center;
+    margin: 20px;
+  }
+  .toggle .fa {
+    position: relative;
+    font-size: 2rem;
+  }
+  #nav2 {
+    margin-top: 4px;
+  }
+
+  /* Ethics Excellence */
+  .ethics_excellence h1{
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+  .ethics_excellence h3{
+    font-size: 1.2rem;
+  }
+  .ethics_excellence hr {
+    width: 100px;
+  }
+  .ethics_excellence p {
+    font-size: 1rem;
+  }
+
+  /* Normal */
+  #nav2 ul {
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+    top: 14rem;
+    overflow: auto;
+    text-align: left;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.267);
+  }
+  #nav2 ul li {
+    padding: 3px;
+    margin: 5px;
+  }
+
+  /* Active Class */
+  #nav2.active {
+    margin-bottom: 15rem;
+  }
 }
